@@ -1,0 +1,555 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>App10-APLICACIÒN FINAL</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
+
+<script src="phonegap.js"></script><!-- necesario*/ -->
+
+<script type="text/javascript">
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head> 
+<body onLoad="MM_preloadImages('imagenes/itsa4.jpg','imagenes/ibio3.jpg','imagenes/itsa.png','imagenes/psicologia4.jpg','imagenes/ibio6.jpg','imagenes/iam5.jpg','imagenes/iam.jpg')"> 
+<div data-role="page" id="Principal" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Aplicacón final  </h1>
+  </div>
+ <p>&nbsp;</p>
+ <div data-role="main" class="ui-content">
+    <div>
+      <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+        <li class="ui-first-child">
+   <a href="#page16" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>	Un vistazo a...</h2>
+     </a>
+  </li>
+   <li class="ui-first-child">
+   <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Licenciatura en Psicología</h2>
+     </a>
+   <img src="imagenes/ps6.jpg">
+  </li>
+   <li class="ui-first-child">
+   <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>	Ingeniería Bioquímica</h2>
+     </a>
+  <img src="imagenes/ibio.jpg" width="386" height="115">
+  </li>
+     <li class="ui-first-child">
+   <a href="#page11" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>	LICENCIATURA EN INGENIERÍA AMBIENTAL</h2>
+     </a>
+  <img src="imagenes/iam.jpg" width="380" height="109">
+  </li>
+       <li class="ui-first-child">
+   <a href="#page15" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>	Acerca de</h2>
+     </a>
+  </li>
+  </ul>
+ </div>
+ </div>
+ 
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+</div>
+
+<div data-role="page" id="page3" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regesar" data-back-btn-theme="a">
+ <h1>Licenciatura en Psicología</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div>
+   <img src="imagenes/psicologia1.jpg" width="468" height="195" alt="psicologia">
+   <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+     <li class="ui-first-child">
+      <a href="#page4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Peril de Egreso</h2>
+        </a>
+      </li>
+   <li class="ui-first-child">
+      <a href="#page5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Campo de trabajo</h2>
+        </a>
+      </li>
+    <li class="ui-first-child">
+      <a href="#page6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Universidad que la oferta:</h2>
+        </a>
+      </li>
+</ul>
+  <p><img src="imagenes/psicologia3.jpg" width="396" height="318">
+  </p>
+    </div>
+  </div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+</div>
+
+<div data-role="page" id="page4" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Perfil de Egreso.</h1>
+ </div>
+ <div data-role="content" align="center">
+ <p>Perfil de Egreso<br>
+   El egresado de la licenciatura en Psicología será un profesional competente en la
+aplicación de los fundamentos teóricos, metodológicos y técnicos de la disciplina, en
+actividades de investigación, evaluación, planeación, prevención e intervención en los
+ámbitos del comportamiento humano y relacional, con base en los valores de
+honestidad, responsabilidad, servicio, confidencialidad, respeto a la diversidad y al
+medioambiente.<br>
+Será capaz de responder prioritariamente a las necesidades del contexto, tomará
+decisiones a partir de fundamentos precisos y adoptará una actitud crítica, creativa,
+propositiva y con compromiso social.
+</p>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image53','','imagenes/psicologia4.jpg',1)"><img src="imagenes/ps5.jpg" width="402" height="190" id="Image53"></a></p>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+
+<div data-role="page" id="page5" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Campo de Trabajo</h1>
+ </div>
+ <div data-role="content" align="center">
+ <p>Campo de Trabajo<br>
+El campo de trabajo en el que puede desempeñarse un licenciado en Psicología es vasto,
+ya que puede laborar en institutos de educación de cualquier nivel, en laboratorios
+haciendo investigación, en instituciones de salud, de producción, centros de educación
+especial y de terapia educativa; hospitales, clínicas, guarderías, centros penitenciarios,
+empresas públicas y privadas, casas de cuidado diario, centros de atención y
+rehabilitación especializados, dependencias gubernamentales y organizaciones
+abocadas a diversas actividades de servicio a la comunidad.
+Puede trabajar por su cuenta en consulta o asesoría privada.
+</p>
+ <p><img src="imagenes/psicologia4.jpg" width="302" height="181" alt="loco1"></p>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+ 
+<div data-role="page" id="page6" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Universidad que la oferta.</h1>
+ </div>
+ <div data-role="content" align="center">
+  <h2> Benemerita Universidad Autonoma de Puebla.</h2><BR>
+  <img src="imagenes/buap3.jpg" width="306" height="194">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Imágen:</h1>
+    <div>
+    <p>Para mayor información:<br>Sitio electrónico de la facultad:
+    <br><a href="http://www.psicologia.buap.mx/" target="_self">www.psicologia.buap.mx</a>
+</p>
+      <p><img src="imagenes/buap2.jpg" width="257" height="140" alt="baja"></p>
+     </div>
+     </div>
+       <div data-role="collapsible" data-content-theme="false">
+    <h1>Otras Universidades que ofertan esta carrera:</h1>
+    <div>
+    <p>UNITEC:<br>Sitio electrónico de la facultad:
+    <br><a href="http://www.unitec.mx/licenciatura-en-psicologia/" target="_self">http://www.unitec.mx/licenciatura-en-psicologia/</a>
+</p>
+<p>UNIoportunidades:</p><a href="http://www.unioportunidades.com.mx/universidad/419/0/Universidad+del+Desarrollo+del+Estado+de+Puebla" target="_self">www.unioportunidades.com.mx</a>
+     </div>
+     </div>
+     
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+
+<div data-role="page" id="page7" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regesar" data-back-btn-theme="a">
+ <h1>Ingeniería Bioquímica</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/ibio3.jpg',1)"><img src="imagenes/ibio2.jpg" width="315" height="160" id="Image19"></a>
+ 
+  <ul data-role="listview"  data-theme="b" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child"><a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Peril de Egreso</h2>
+        </a>
+      </li>
+      <li class="ui-first-child">
+      <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Plan de estudio:</h2>
+        </a>
+      </li>
+  <li class="ui-first-child">
+      <a href="#page10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Universidad que la oferta:</h2>
+      </a></li>
+       </ul>
+ <ul data-role="controlgroup"  data-type="vertical" data-theme="b" >
+      <li class="ui-first-child">
+      <a href="#page18" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Visualizando un fututo mejor:</h2>
+      </a></li>
+      </ul>
+    </div>
+  </div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+</div>
+
+<div data-role="page" id="page8" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Prefil de Egreso:.</h1>
+ </div>
+ <div data-role="content" align="center">
+ <h1>Prefil de Egreso:<br></h1>
+ <ul>
+   <li>Trabajar en equipos multidisciplinarios y multiculturales con liderazgo, sentido crítico, disposición al cambio y comprometido con la calidad. </li>
+   <li>Diseñar, seleccionar, adaptar y escalar equipos y procesos en los que se aprovechen de manera sustentable los recursos bióticos. Identificar, prevenir, controlar y dar solución a problemas de alta dirección dentro de la práctica de la ingeniería bioquímica. </li>
+   <li>Identificar y aplicar tecnologías emergentes relacionadas con el campo de acción del Ingeniero Bioquímico. </li>
+   <li>Participar en el diseño y aplicación de normas y programas de gestión y aseguramiento de la calidad, en empresas e instituciones del ámbito de la Ingeniería Bioquímica. </li>
+   <li><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image53','','imagenes/ibio6.jpg',1)"><img src="imagenes/ibio2.jpg" width="248" height="117" id="Image"></a></li>
+ </ul>
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>Imágen:</h1>
+    <div>
+    <p>Para mayor información:<br>Sitio electrónico de la ingenieria.
+    <br><a href="https://www.itsa.edu.mx/ingenieria-bioquimica/" target="_self">https://www.itsa.edu.mx/ingenieria-bioquimica/</a>
+</p>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/itsa4.jpg',1)"><img src="imagenes/itsa2.jpg" width="365" height="181" id="Image17"></a></p>
+      
+     </div>
+ </div>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+ <div data-role="page" id="page9" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Plan de estudio:</h1>
+ </div>
+ <div data-role="content" align="center"><img src="imagenes/pla.png" width="376" height="353" alt="plan de studio">
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+<div data-role="page" id="page10" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Universidad que la oferta:</h1>
+ </div>
+ <div data-role="content" align="center">
+ Instituto Tecnológico Supeior de Atlixco
+<div data-role="collapsible" data-content-theme="false">
+    <h1>Imágen:</h1>
+    <div>
+    <p>Para mayor información:<br>Sitio electrónico de la facultad:
+    <br><a href="https://www.itsa.edu.mx/ingenieria-bioquimica/" target="_self">https://www.itsa.edu.mx/ingenieria-bioquimica/</a>
+    
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/itsa.png',1)"><img src="imagenes/itsa3.JPG" width="335" height="185" id="Image21"></a>          
+    </div>
+    </div>
+</p>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+ <div data-role="page" id="page11" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regesar" data-back-btn-theme="a">
+ <h1>Licenciatura en  Ingenieria Ambiental</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div>
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child">
+      <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Peril de Egreso</h2>
+        </a>
+      </li>
+    <li class="ui-first-child">
+      <a href="#page13" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Campo de trabajo</h2>
+        </a>
+      </li>
+    <li class="ui-first-child">
+      <a href="#page14" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Universidad que la oferta:</h2>
+        </a>
+      </li>
+  </ul>
+    </div>
+  </div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+</div>
+
+<div data-role="page" id="page12" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Perfil de Egreso</h1>
+ </div>
+ <div data-role="content" align="center">
+  <p>Perfil de Egreso:<br>
+El egresado será capaz de analizar, proponer las operaciones, procesos para la
+solución a problemas ambientales; elegir acciones para un adecuado manejo y
+aprovechamiento sustentable de recursos. Conocerá los mecanismos,
+procedimientos de gestión y legislación ambiental. </p>
+<div data-role="collapsible" data-content-theme="false">
+    <h1>Imágen:</h1>
+    <div>
+    <p>Para mayores informes visite:<br>Sitio electrónico de la facultad:
+    <br><a href="http://http://www.ingenieriaquimica.buap.mx/" target="_self">www.ingenieriaquimica.buap.mx/</a>
+    
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image68','','imagenes/iam.jpg',1)"><img src="imagenes/buap4.jpg" width="264" height="191" id="Image68"></a>         </div>
+    </div>
+</p>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+ <div data-role="page" id="page13" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Plan de estudio</h1>
+ </div>
+ <div data-role="content" align="center">
+ <p> Las competencias desarrolladas durante su formación
+profesional le permitirán desempeñarse en dependencias de los diferentes niveles
+de gobierno con inferencia en gestión y manejo de recursos naturales. Mientras
+que en el sector privado tienen demanda en aquellas empresas y/o industrias en
+donde se requiera el cumplimiento de normatividad nacional vigente en materia de
+emisiones a la atmósfera, descargas de efluentes, manejo de residuos, así como
+en la implementación de sistemas de ahorro de energía y uso de energías
+renovables. </p>
+<div data-role="collapsible" data-content-theme="false">
+    <h1>Imágen:</h1>
+    <div>
+    <p>Para conocer el plan de estudio detallado de este facultad, visite:<br>
+      <a href="http://www.admision.buap.mx/sites/default/files/carreras/2017/ing_ambiental.pdf" target="_self">www.admision.buap.mx/sites/default/files/carreras/2017/ing_ambiental</a>     </p>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image54','','imagenes/iam5.jpg',1)"><img src="imagenes/buap2.jpg" width="492" height="260" id="Image54"></a>        </div>
+    </div>
+</p>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+ <div data-role="page" id="page14" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Universidad que la oferta:</h1>
+ </div>
+ <div data-role="content" align="center">
+Benemerita Universidad Autonoma de Puebla.
+ <p>Para mayor información:<br>Sitio electrónico de la Universidad:
+    <br><a href="http://www.admision.buap.mx/oferta-academica/licenciatura/ingenierias" target="_self">http://www.admision.buap.mx/oferta-academica/licenciatura/ingenierias</a>
+<div data-role="collapsible" data-content-theme="false">
+    <div>
+     <img src="imagenes/buap4.jpg" width="264" height="191" alt="buap">         
+       </div>
+    </div>
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child">
+      <a href="#page17" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Otras Universidades que ofrecen esta carrera.</h2>
+        </a>
+      </li>
+      </ul>
+
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+  <div data-role="page" id="page16" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Un vistazo a...</h1>
+ </div>
+ <div data-role="content" align="center">
+ Conoce un poco sobre algunas opciones de carreras universitarias que podrìas estudiar terminado tu bachillerato.
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Visor 1</h1>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/buap3.jpg" alt="buap3" title="buap3" id="wows1_0"/></li>
+		<li><img src="data1/images/cau.jpg" alt="cau" title="cau" id="wows1_1"/></li>
+		<li><img src="data1/images/cau2.jpg" alt="cau2" title="cau2" id="wows1_2"/></li>
+		<li><img src="data1/images/cau3.jpg" alt="cau3" title="cau3" id="wows1_3"/></li>
+		<li><img src="data1/images/iam5.jpg" alt="iam5" title="iam5" id="wows1_4"/></li>
+		<li><img src="data1/images/ibio6.jpg" alt="ibio6" title="ibio6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/itsa.png" alt="css slider" title="itsa" id="wows1_6"/></a></li>
+		<li><img src="data1/images/psicologia3.jpg" alt="psicologia3" title="psicologia3" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="buap3"><span><img src="data1/tooltips/buap3.jpg" alt="buap3"/>1</span></a>
+		<a href="#" title="cau"><span><img src="data1/tooltips/cau.jpg" alt="cau"/>2</span></a>
+		<a href="#" title="cau2"><span><img src="data1/tooltips/cau2.jpg" alt="cau2"/>3</span></a>
+		<a href="#" title="cau3"><span><img src="data1/tooltips/cau3.jpg" alt="cau3"/>4</span></a>
+		<a href="#" title="iam5"><span><img src="data1/tooltips/iam5.jpg" alt="iam5"/>5</span></a>
+		<a href="#" title="ibio6"><span><img src="data1/tooltips/ibio6.jpg" alt="ibio6"/>6</span></a>
+		<a href="#" title="itsa"><span><img src="data1/tooltips/itsa.png" alt="itsa"/>7</span></a>
+		<a href="#" title="psicologia3"><span><img src="data1/tooltips/psicologia3.jpg" alt="psicologia3"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+  
+ <div data-role="page" id="page15" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Acerca de la Programadora</h1>
+ </div>
+ <div data-role="content" align="center">
+ <p>Nombre de la programadora:<br>
+   Ana Lilia Fabian Garcia</p>
+ <p><br>
+   Submodulo:<br>
+   Desarrolla Aplicaciones Móviles.</p>
+ <p>Semestre:4º Grupo:"G"<br> 
+   Nombre del docente: Josè Antonio Gomez Hernàndez<br>
+ </p>
+<div data-role="collapsible" data-content-theme="false">
+  <h1>¿Quieres conocerla?</h1>
+  <img src="imagenes/IMG_20170530_085641.jpg" width="216" height="223">
+</div>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+<div data-role="page" id="page17" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Otras Universidades:</h1>
+ </div>
+ <div data-role="content" align="center">
+ <img src="imagenes/iam5.jpg">
+ <h1>Tecnológico Nacional de México.<br><br>EDEI(Escuela de Ingenieria)</h1>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+<div data-role="page" id="page18" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Visualizando un futuro:</h1>
+ </div>
+ <div data-role="content" align="center">
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/buap4.jpg" alt="buap4" title="buap4" id="wows2_0"/></li>
+		<li><img src="data2/images/ibio6.jpg" alt="ibio6" title="ibio6" id="wows2_1"/></li>
+		<li><img src="data2/images/ibio2.jpg" alt="ibio2" title="ibio2" id="wows2_2"/></li>
+		<li><img src="data2/images/ibio4.jpg" alt="ibio4" title="ibio4" id="wows2_3"/></li>
+		<li><img src="data2/images/ibio3.jpg" alt="ibio3" title="ibio3" id="wows2_4"/></li>
+		<li><img src="data2/images/ibio7.jpg" alt="ibio7" title="ibio7" id="wows2_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data2/images/ibio8.jpg" alt="wowslider.net" title="ibio8" id="wows2_6"/></a></li>
+		<li><img src="data2/images/itsa.png" alt="itsa" title="itsa" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="buap4"><span><img src="data2/tooltips/buap4.jpg" alt="buap4"/>1</span></a>
+		<a href="#" title="ibio6"><span><img src="data2/tooltips/ibio6.jpg" alt="ibio6"/>2</span></a>
+		<a href="#" title="ibio2"><span><img src="data2/tooltips/ibio2.jpg" alt="ibio2"/>3</span></a>
+		<a href="#" title="ibio4"><span><img src="data2/tooltips/ibio4.jpg" alt="ibio4"/>4</span></a>
+		<a href="#" title="ibio3"><span><img src="data2/tooltips/ibio3.jpg" alt="ibio3"/>5</span></a>
+		<a href="#" title="ibio7"><span><img src="data2/tooltips/ibio7.jpg" alt="ibio7"/>6</span></a>
+		<a href="#" title="ibio8"><span><img src="data2/tooltips/ibio8.jpg" alt="ibio8"/>7</span></a>
+		<a href="#" title="itsa"><span><img src="data2/tooltips/itsa.png" alt="itsa"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Ana Lilia Fabian Garcìa.<br>Guìa de Carreras</h4>
+ <img src="res/android/mdpi.png" width="56" height="46">
+ </div>
+ </div>
+ 
+</div>
+
+</body>
+</html>
